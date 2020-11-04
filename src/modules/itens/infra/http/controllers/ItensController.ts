@@ -24,8 +24,6 @@ export default class ItensController {
     const { price, description, name, restaurant } = request.body;
     const { id } = request.params;
 
-    console.log(id);
-
     const updateItem = container.resolve(UpdateItemService);
 
     const item = await updateItem.execute({
