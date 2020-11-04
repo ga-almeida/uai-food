@@ -23,6 +23,7 @@
         "prettier"
     ],
     "rules": {
+      "no-plusplus": "off",
       "radix": "off",
       "no-useless-constructor": "off",
       "class-methods-use-this": "off",
