@@ -11,6 +11,8 @@ services:
       - '3333:3333'
     depends_on:
       - uai-food-database
+    links:
+      - uai-food-database
     networks:
       - uai-food-network
 

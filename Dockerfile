@@ -10,10 +10,8 @@ USER node
 
 RUN yarn
 
-RUN yarn typeorm migration:run
-
 COPY --chown=node:node . .
 
 EXPOSE 3333
 
-CMD ["yarn", "dev:server"]
+CMD ["yarn" ,"dev:server"]
