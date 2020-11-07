@@ -27,7 +27,6 @@
 <p class="has-line-data" data-line-start="33" data-line-end="34">Install the dependencies and devDependencies and start the server.</p>
 <pre><code class="has-line-data" data-line-start="36" data-line-end="41" class="language-sh">$ git <span class="hljs-built_in">clone</span> https://github.com/ga-almeida/uai-food.git
 $ <span class="hljs-built_in">cd</span> uai-food
-$ npm install or yarn
 $ docker-compose up
 </code></pre>
 <p class="has-line-data" data-line-start="42" data-line-end="43">Api documentation</p>
