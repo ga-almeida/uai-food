@@ -7,7 +7,7 @@
 <li class="has-line-data" data-line-start="9" data-line-end="10">Allow the registration and updating of a restaurant item in the database.</li>
 <li class="has-line-data" data-line-start="10" data-line-end="12">Allow to search for all restaurants that meet the selected filters.</li>
 </ul>
-<p class="has-line-data" data-line-start="12" data-line-end="13">This text you see here is <em>actually</em> written in Markdown! To get a feel for Markdown’s syntax, type some text into the left window and watch the results in the right.</p>
+
 <h3 class="code-line" data-line-start=14 data-line-end=15 ><a id="Tech_14"></a>Tech</h3>
 <p class="has-line-data" data-line-start="16" data-line-end="17">In this project the following technologies were used:</p>
 <ul>
