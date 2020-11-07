@@ -1,10 +1,11 @@
 {
   "type": "mysql",
-  "host": "localhost",
-  "port": 3305,
+  "host": "172.21.0.2",
+  "port": 3306,
   "username": "root",
   "password": "docker",
   "database": "uai_food",
+  "synchronize": true,
   "entities": [
 	"./src/modules/**/infra/typeorm/entities/*.ts"
   ],

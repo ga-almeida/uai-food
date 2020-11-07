@@ -22,7 +22,7 @@ export default class ItensController {
 
   public async update(request: Request, response: Response): Promise<Response> {
     const { price, description, name, restaurant } = request.body;
-    const { id } = request.params;
+    const { id, restaurantId } = request.params;
 
     const updateItem = container.resolve(UpdateItemService);
 
@@ -32,6 +32,7 @@ export default class ItensController {
       description,
       name,
       restaurant,
+      restaurantDoItem: { id: parseInt(restaurantId) },
     });
 
     return response.json(item);

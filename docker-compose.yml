@@ -1,0 +1,36 @@
+version: '3.7'
+
+services:
+  uai-food-api:
+    build: .
+    container_name: uai-food-api
+    volumes:
+      - .:/home/node/api
+      - /home/node/api/node_modules
+    ports:
+      - '3333:3333'
+    depends_on:
+      - uai-food-database
+    networks:
+      - uai-food-network
+
+  uai-food-database:
+    image: mysql
+    container_name: mysql-container
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: "docker"
+      MYSQL_DATABASE: "uai_food"
+    ports:
+      - "3305:3306"
+    volumes:
+      - uai-food-database-data:/data
+    networks:
+      - uai-food-network
+
+volumes:
+  uai-food-database-data:
+
+networks:
+  uai-food-network:
+    driver: bridge

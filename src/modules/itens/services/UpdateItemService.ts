@@ -11,6 +11,9 @@ interface IRequest {
   description: string;
   price: number;
   restaurant: Restaurant;
+  restaurantDoItem: {
+    id: number;
+  };
 }
 
 @injectable()
@@ -26,10 +29,11 @@ class CreateItemService {
     name,
     restaurant,
     id,
+    restaurantDoItem,
   }: IRequest): Promise<Item> {
     const itemExistName = await this.itensRepository.findByIdInRestaurant({
       id,
-      restaurant,
+      restaurant: restaurantDoItem as Restaurant,
     });
 
     if (!itemExistName) {
@@ -41,6 +45,7 @@ class CreateItemService {
       price,
       description,
       name,
+      restaurant,
     });
 
     return item;

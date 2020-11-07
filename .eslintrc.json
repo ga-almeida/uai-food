@@ -23,6 +23,7 @@
         "prettier"
     ],
     "rules": {
+      "@typescript-eslint/no-var-requires": "off",
       "no-plusplus": "off",
       "radix": "off",
       "no-useless-constructor": "off",

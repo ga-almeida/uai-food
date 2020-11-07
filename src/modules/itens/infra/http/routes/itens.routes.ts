@@ -6,6 +6,6 @@ const itensRouter = Router();
 const itensController = new ItensController();
 
 itensRouter.post('/', itensController.create);
-itensRouter.put('/:id', itensController.update);
+itensRouter.put('/:id/:restaurantId', itensController.update);
 
 export default itensRouter;

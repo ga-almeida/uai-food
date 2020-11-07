@@ -81,6 +81,8 @@ class RestaurantsRepository implements IRestaurantsRepository {
       }
     }
 
+    console.log(sql);
+
     const restaurants = await this.ormRepository.query(sql);
 
     return restaurants;

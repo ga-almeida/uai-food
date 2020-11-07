@@ -1,10 +1,10 @@
-import { getRepository, Repository, UpdateResult } from 'typeorm';
+import { getRepository, Repository } from 'typeorm';
 
 import IItensRepository from '@modules/itens/repositories/IItensRepository';
 import Item from '@modules/itens/infra/typeorm/entities/Item';
 import ICreateItemDTO from '@modules/itens/dtos/ICreateItemDTO';
-import IFindNameItemDTO from '@modules/itens/dtos/IFindNameItemDTO';
 import IUpdateItemDTO from '@modules/itens/dtos/IUpdateItemDTO';
+import IFindByNameDTO from '@modules/itens/dtos/IFindByNameDTO';
 import IFindByItemInRestaurantDTO from '@modules/itens/dtos/IFindByItemInRestaurantDTO';
 
 class ItensRepository implements IItensRepository {
@@ -46,7 +46,7 @@ class ItensRepository implements IItensRepository {
   public async findByName({
     name,
     restaurant,
-  }: IFindNameItemDTO): Promise<Item | undefined> {
+  }: IFindByNameDTO): Promise<Item | undefined> {
     const item = await this.ormRepository.findOne({
       where: { name, restaurant },
     });
