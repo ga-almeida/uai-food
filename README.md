@@ -21,9 +21,10 @@
 <li class="has-line-data" data-line-start="25" data-line-end="26"><a href="https://www.typescriptlang.org/">TypeScript</a> - Superset of JavaScript developed by Microsoft that adds typing and some other features to the language.</li>
 <li class="has-line-data" data-line-start="26" data-line-end="27"><a href="https://rockcontent.com/br/blog/rest-api/">REST</a> - Software architecture style that defines a set of restrictions to be used when creating web services.</li>
 <li class="has-line-data" data-line-start="27" data-line-end="29"><a href="https://medium.com/thiago-aragao/solid-princ%C3%ADpios-da-programa%C3%A7%C3%A3o-orientada-a-objetos-ba7e31d8fb25">SOLID</a> - Principles or good practices of object-oriented programming, and can be applied to any programming language.</li>
+<li class="has-line-data" data-line-start="29" data-line-end="30"><a href="https://insomnia.rest/">Insomnia</a> - Workflows and Tools to make API Development Easier.</li>
 </ul>
 <h3 class="code-line" data-line-start=29 data-line-end=30 ><a id="Installation_29"></a>Installation</h3>
-<p class="has-line-data" data-line-start="31" data-line-end="32">Project requires <a href="https://nodejs.org/">Node.js</a> v8+ to run.</p>
+<p class="has-line-data" data-line-start="31" data-line-end="32">Project requires <a href="https://nodejs.org/">Node.js</a> v8+ and <a href="https://www.docker.com/">Docker</a> to run.</p>
 <p class="has-line-data" data-line-start="33" data-line-end="34">Install the dependencies and devDependencies and start the server.</p>
 <pre><code class="has-line-data" data-line-start="36" data-line-end="41" class="language-sh">$ git <span class="hljs-built_in">clone</span> https://github.com/ga-almeida/uai-food.git
 $ <span class="hljs-built_in">cd</span> uai-food
